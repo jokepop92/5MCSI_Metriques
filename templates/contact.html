@@ -3,128 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire Maserati Moderne</title>
-    <style>
-        /* Importation d'une police élégante et moderne */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
-        /* Style général pour la page */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0d1b2a; /* Couleur sombre Maserati */
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Conteneur du formulaire avec un style moderne */
-        .form-container {
-            background-color: #1b263b; /* Bleu sombre Maserati */
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3); /* Ombre douce */
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-            transition: box-shadow 0.3s ease;
-        }
-
-        /* Effet au survol du conteneur */
-        .form-container:hover {
-            box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Titre du formulaire */
-        .form-container h1 {
-            color: #ffffff;
-            font-weight: 500;
-            margin-bottom: 30px;
-            font-size: 28px;
-        }
-
-        /* Labels stylisés */
-        label {
-            color: #ffffff;
-            display: block;
-            font-size: 14px;
-            margin-bottom: 8px;
-            text-align: left;
-        }
-
-        /* Champs de texte */
-        input[type="text"], textarea {
-            width: 100%;
-            padding: 12px 15px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: 8px;
-            background-color: #e0e1dd; /* Couleur de fond des champs */
-            font-size: 14px;
-            color: #000;
-            outline: none;
-            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-
-        input[type="text"]:focus, textarea:focus {
-            background-color: #ffffff; /* Couleur de fond lors du focus */
-        }
-
-        /* Bouton moderne avec effets */
-        button {
-            width: 100%;
-            background-color: #005f9f;
-            color: white;
-            border: none;
-            padding: 15px 0;
-            font-size: 16px;
-            font-weight: 500;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        button:hover {
-            background-color: #0077b6;
-            transform: scale(1.05);
-        }
-
-        /* Texte du textarea */
-        textarea {
-            height: 120px;
-            resize: none;
-        }
-
-        /* Style pour les écrans mobiles */
-        @media (max-width: 600px) {
-            .form-container {
-                padding: 30px;
-            }
-
-            button {
-                padding: 12px 0;
-            }
-        }
-    </style>
+    <title>Formulaire de Contact</title>
 </head>
-<body>
-    <div class="form-container">
-        <h1>Contact Maserati</h1>
-        <form>
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f2f5; margin: 0; position: relative;">
 
-            <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+    <!-- Image d'animation manga en arrière-plan -->
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnc0N2N1ZjNndzI0eGF4dTN4bDJqZ2E3NDZ6NTJwYWo1bzg0bXRtMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NFaQu9HNvWCPmbSVJi/giphy.webp" alt="Animation Manga" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
-
-            <button type="submit">Envoyer</button>
+    <div style="background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; width: 350px; text-align: center; position: relative;">
+        <h2 style="margin-bottom: 20px; color: #333; font-size: 24px;">Contactez-nous</h2>
+        <form action="#" method="post">
+            <div style="margin-bottom: 15px; text-align: left;">
+                <label for="first-name" style="display: block; margin-bottom: 5px; color: #666; font-size: 14px;">Prénom</label>
+                <input type="text" id="first-name" name="first-name" required style="width: calc(100% - 22px); padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 15px; text-align: left;">
+                <label for="last-name" style="display: block; margin-bottom: 5px; color: #666; font-size: 14px;">Nom</label>
+                <input type="text" id="last-name" name="last-name" required style="width: calc(100% - 22px); padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            <div style="margin-bottom: 15px; text-align: left;">
+                <label for="message" style="display: block; margin-bottom: 5px; color: #666; font-size: 14px;">Message</label>
+                <textarea id="message" name="message" required style="width: calc(100% - 22px); padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; height: 100px; resize: vertical;"></textarea>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="submit" value="Envoyer" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+            </div>
         </form>
     </div>
+
 </body>
 </html>
